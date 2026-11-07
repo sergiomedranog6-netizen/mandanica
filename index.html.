@@ -1,1 +1,22 @@
-.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MandaNica | Pedí fácil, recibí rápido</title>
+</head>
+<body>
+  <h1>🇳🇮 MandaNica</h1>
+  <h2>Pedí fácil, recibí rápido.</h2>
+  <p>Tu plataforma de servicios y entregas en Nicaragua.</p>
+  <h3>¿Qué necesitás hoy?</h3>
+  <ul>
+    <li>🍕 Restaurantes y comida</li>
+    <li>🛒 Supermercados y pulperías</li>
+    <li>💊 Farmacias</li>
+    <li>🏪 Tiendas y comercios</li>
+    <li>📦 Mandados y entregas</li>
+    <li>🏍️ Transporte de pasajeros</li>
+  </ul>
+</body>
+</html>
