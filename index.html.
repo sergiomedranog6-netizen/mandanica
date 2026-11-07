@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MandaNica | Pedí fácil, recibí rápido</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MandaNica</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+header {
+  background: #087c48;
+  color: white;
+  padding: 25px 18px;
+}
+header h1 { margin: 0; font-size: 30px; }
+header p { margin-bottom: 0; }
+main { padding: 20px; }
+h2 { color: #087c48; }
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.category {
+  background: white;
+  padding: 22px 10px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #ddd;
+}
+.category span {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #666;
+}
+</style>
 </head>
 <body>
-  <h1>🇳🇮 MandaNica</h1>
-  <h2>Pedí fácil, recibí rápido.</h2>
-  <p>Tu plataforma de servicios y entregas en Nicaragua.</p>
-  <h3>¿Qué necesitás hoy?</h3>
-  <ul>
-    <li>🍕 Restaurantes y comida</li>
-    <li>🛒 Supermercados y pulperías</li>
-    <li>💊 Farmacias</li>
-    <li>🏪 Tiendas y comercios</li>
-    <li>📦 Mandados y entregas</li>
-    <li>🏍️ Transporte de pasajeros</li>
-  </ul>
+<header>
+<h1>🇳🇮 MandaNica</h1>
+<p>Pedí fácil, recibí rápido.</p>
+</header>
+<main>
+<h2>¿Qué necesitás hoy?</h2>
+<div class="categories">
+<div class="category"><span>🍕</span>Restaurantes</div>
+<div class="category"><span>🛒</span>Supermercados</div>
+<div class="category"><span>💊</span>Farmacias</div>
+<div class="category"><span>🏪</span>Tiendas</div>
+<div class="category"><span>📦</span>Mandados</div>
+<div class="category"><span>🏍️</span>Transporte</div>
+</div>
+</main>
+<footer>
+MandaNica 🇳🇮<br>
+Conectando Nicaragua.
+</footer>
 </body>
 </html>
