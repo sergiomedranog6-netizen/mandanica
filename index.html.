@@ -1,69 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MandaNica</title>
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f6fa;
+  background: #f4f7f4;
   color: #222;
 }
 header {
-  background: #087c48;
+  background: #087b45;
   color: white;
-  padding: 25px 18px;
+  text-align: center;
+  padding: 30px 15px;
 }
-header h1 { margin: 0; font-size: 30px; }
+header h1 { margin: 0; font-size: 34px; }
 header p { margin-bottom: 0; }
 main { padding: 20px; }
-h2 { color: #087c48; }
+h2 { text-align: center; }
 .categories {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
 }
 .category {
   background: white;
-  padding: 22px 10px;
-  border-radius: 14px;
+  padding: 24px 10px;
+  border-radius: 12px;
   text-align: center;
   font-weight: bold;
-  box-shadow: 0 2px 8px #ddd;
+  box-shadow: 0 2px 8px #0001;
+  border: 1px solid #ddd;
+  cursor: pointer;
 }
-.category span {
-  display: block;
-  font-size: 32px;
-  margin-bottom: 10px;
+.category:active { background: #dff5e8; }
+#message {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
 }
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   color: #666;
 }
 </style>
 </head>
 <body>
 <header>
-<h1>🇳🇮 MandaNica</h1>
-<p>Pedí fácil, recibí rápido.</p>
+  <h1>🇳🇮 MandaNica</h1>
+  <p>Pedí fácil, recibí rápido</p>
 </header>
+
 <main>
-<h2>¿Qué necesitás hoy?</h2>
-<div class="categories">
-<div class="category"><span>🍕</span>Restaurantes</div>
-<div class="category"><span>🛒</span>Supermercados</div>
-<div class="category"><span>💊</span>Farmacias</div>
-<div class="category"><span>🏪</span>Tiendas</div>
-<div class="category"><span>📦</span>Mandados</div>
-<div class="category"><span>🏍️</span>Transporte</div>
-</div>
+  <h2>¿Qué necesitás hoy?</h2>
+  <div class="categories">
+    <div class="category" onclick="selectCategory('Restaurantes y comida')">🍕<br>Restaurantes</div>
+    <div class="category" onclick="selectCategory('Supermercados y pulperías')">🛒<br>Supermercados</div>
+    <div class="category" onclick="selectCategory('Farmacias')">💊<br>Farmacias</div>
+    <div class="category" onclick="selectCategory('Tiendas y comercios')">🛍️<br>Tiendas</div>
+    <div class="category" onclick="selectCategory('Mandados y entregas')">📦<br>Mandados</div>
+    <div class="category" onclick="selectCategory('Transporte en moto y automóvil')">🏍️🚗<br>Transporte</div>
+  </div>
+
+  <div id="message">
+    Seleccioná una categoría para comenzar.
+  </div>
 </main>
+
 <footer>
-MandaNica 🇳🇮<br>
-Conectando Nicaragua.
+  MandaNica © 2026
+  <p>Hecho en Nicaragua 🇳🇮</p>
 </footer>
+
+<script>
+function selectCategory(category) {
+  document.getElementById("message").innerText =
+    "Seleccionaste: " + category +
+    ". Próximamente podrás realizar tu pedido aquí.";
+}
+</script>
 </body>
 </html>
